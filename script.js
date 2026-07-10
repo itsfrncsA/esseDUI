@@ -698,9 +698,8 @@
     renderCategoryTabs();
     renderMenuItems();
 
-    // Browser testing mode
+    // Browser testing mode — show menu with demo data
     if (!isInFiveM()) {
-        document.body.style.background = 'radial-gradient(ellipse at 20% 30%, #0d0008 0%, #030306 60%, #000000 100%)';
         mainMenu.style.display = 'flex';
     }
 
