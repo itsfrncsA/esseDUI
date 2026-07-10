@@ -566,22 +566,23 @@ body {
 .keyboard-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(6px);
+    background: transparent;
     display: none;
     justify-content: center;
     align-items: center;
     z-index: 900;
+    pointer-events: none;
 }
 
 .keyboard-container {
     width: 380px;
-    background: rgba(10, 10, 18, 0.96);
+    background: rgba(10, 10, 18, 0.97);
     border-radius: var(--radius);
     border: 1px solid rgba(255, 62, 62, 0.35);
-    box-shadow: 0 0 40px rgba(255,62,62,0.15), 0 16px 48px rgba(0,0,0,0.6);
+    box-shadow: 0 0 40px rgba(255,62,62,0.15), 0 16px 48px rgba(0,0,0,0.8);
     overflow: hidden;
     animation: popIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: auto;
 }
 
 .keyboard-header {
@@ -649,22 +650,23 @@ body {
 .key-selector-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(8px);
+    background: transparent;
     display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    pointer-events: none;
 }
 
 .key-selector-container {
     width: 320px;
-    background: rgba(10, 10, 18, 0.96);
+    background: rgba(10, 10, 18, 0.97);
     border-radius: var(--radius);
     border: 1px solid rgba(255, 62, 62, 0.35);
-    box-shadow: 0 0 40px rgba(255,62,62,0.15), 0 16px 48px rgba(0,0,0,0.6);
+    box-shadow: 0 0 40px rgba(255,62,62,0.15), 0 16px 48px rgba(0,0,0,0.8);
     overflow: hidden;
     animation: popIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: auto;
 }
 
 @keyframes popIn {
