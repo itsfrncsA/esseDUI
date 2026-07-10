@@ -61,7 +61,9 @@
     const getParentResource = () =>
         window.GetParentResourceName ? window.GetParentResourceName() : 'shinigami_esse';
 
-    const isInFiveM = () => window.location.protocol !== 'file:';
+    const isInFiveM = () =>
+        typeof window.GetParentResourceName === 'function' ||
+        window.location.protocol === 'nui:';
 
     function emitToClient(actionType, extraData = {}) {
         const currentItem = currentMenuItems[selectedIndex] || null;
